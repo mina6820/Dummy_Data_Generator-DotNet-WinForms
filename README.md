@@ -10,14 +10,14 @@ ADO.NET for Database Interaction: Efficient data insertion and table creation us
 SQL Server Support: The project is designed to work with Microsoft SQL Server.
 
 ## Technologies Used
-C#: Core language for the application.
-Windows Forms: For the desktop UI.
-ADO.NET: For database operations (table creation, data insertion).
-Microsoft SQL Server: The database engine.
+C#: Core language for the application. <br/>
+Windows Forms: For the desktop UI.<br/>
+ADO.NET: For database operations (table creation, data insertion).<br/>
+Microsoft SQL Server: The database engine.<br/>
 
 ## Usage
-1- Launch the application.
-2- Enter the Table Name for creating a new table or select an existing table.
-3- Define the Columns (name and data type) if creating a new table.
-4- Specify the number of rows to generate.
-5- Click Generate Data to populate the table with random dummy data.
+1- Launch the application.<br/>
+2- Enter the Table Name for creating a new table or select an existing table.<br/>
+3- Define the Columns (name and data type) if creating a new table.<br/>
+4- Specify the number of rows to generate.<br/>
+5- Click Generate Data to populate the table with random dummy data.<br/>
