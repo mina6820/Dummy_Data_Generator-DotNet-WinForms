@@ -45,94 +45,92 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(123, 57);
+            label1.Location = new Point(108, 43);
             label1.Name = "label1";
-            label1.Size = new Size(114, 28);
+            label1.Size = new Size(91, 21);
             label1.TabIndex = 0;
             label1.Text = "Table Name";
             // 
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(318, 49);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(278, 37);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(173, 34);
+            textBox1.Size = new Size(322, 29);
             textBox1.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(123, 119);
+            label2.Location = new Point(108, 89);
             label2.Name = "label2";
-            label2.Size = new Size(157, 28);
+            label2.Size = new Size(128, 21);
             label2.TabIndex = 2;
             label2.Text = "Number of Rows";
             // 
             // numericUpDown1
             // 
             numericUpDown1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            numericUpDown1.Location = new Point(318, 119);
-            numericUpDown1.Margin = new Padding(3, 4, 3, 4);
+            numericUpDown1.Location = new Point(278, 89);
+            numericUpDown1.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(174, 34);
+            numericUpDown1.Size = new Size(322, 29);
             numericUpDown1.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(123, 223);
+            label3.Location = new Point(108, 167);
             label3.Name = "label3";
-            label3.Size = new Size(188, 28);
+            label3.Size = new Size(151, 21);
             label3.TabIndex = 4;
             label3.Text = "Column Name & Type";
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { ColumnName, DataType });
-            dataGridView1.Location = new Point(318, 199);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
+            dataGridView1.Location = new Point(278, 148);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(303, 154);
+            dataGridView1.Size = new Size(322, 132);
             dataGridView1.TabIndex = 5;
             // 
             // ColumnName
             // 
             ColumnName.HeaderText = "ColumnName";
-            ColumnName.MinimumWidth = 6;
             ColumnName.Name = "ColumnName";
-            ColumnName.Width = 125;
             // 
             // DataType
             // 
             DataType.HeaderText = "DataType";
             DataType.Items.AddRange(new object[] { "int", "varchar", "float", "datetime", "bit", "decimal" });
-            DataType.MinimumWidth = 6;
             DataType.Name = "DataType";
             DataType.Resizable = DataGridViewTriState.True;
             DataType.SortMode = DataGridViewColumnSortMode.Automatic;
-            DataType.Width = 125;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(768, 479);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.BackColor = Color.DarkGreen;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(652, 359);
             button1.Name = "button1";
-            button1.Size = new Size(98, 45);
+            button1.Size = new Size(106, 34);
             button1.TabIndex = 6;
             button1.Text = "Generate";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(label3);
@@ -140,9 +138,8 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Dummy Data Generator";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
